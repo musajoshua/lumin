@@ -54,6 +54,7 @@ body {
 
 .navbar_cart_total {
     display: flex;
+    cursor: pointer;
 }
 
 .navbar_cart_total_text {
