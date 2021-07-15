@@ -19,13 +19,21 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <div className="navbar_links navbar_left">
-                <img className="logo" src={logo} />
-                <p>Shop</p>
-                <p>Learn</p>
+            <div className="navbar_links">
+                <a href="#" className="navbar_links_text">
+                    <img className="logo" src={logo} />
+                </a>
+                <a className="navbar_links_text" href="#">
+                    Shop
+                </a>
+                <a className="navbar_links_text" href="#">
+                    Learn
+                </a>
             </div>
             <div className="navbar_links navbar_right">
-                <p>Account</p>
+                <a className="navbar_links_text" href="#">
+                    Account
+                </a>
                 <div className="navbar_cart_total" onClick={() => toggleCartVisibilityState(true)}>
                     <img className="cart_logo" src={cart} />
                     <sup className="navbar_cart_total_text">{totalCartItem}</sup>

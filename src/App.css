@@ -28,14 +28,16 @@ body {
     padding: 1rem;
 }
 
-.navbar_left {
-    flex: 3;
-    justify-content: space-around;
+.navbar_right {
+    justify-content: flex-end;
 }
 
-.navbar_right {
-    flex: 1;
-    justify-content: space-evenly;
+.navbar_links_text {
+    font-size: 14px;
+    color: black;
+    line-height: 17px;
+    margin-right: 1.25rem;
+    padding: 0.25rem 1rem;
 }
 
 .logo {
