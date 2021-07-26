@@ -23,7 +23,9 @@ function AllProducts({ products: parentProducts }: IProps) {
         onCompleted: (data) => {
             getProducts({ variables: { currency: data?.cart?.cartCurrency } });
         },
-        onError: () => <div>Error !</div>,
+        onError: function error() {
+            return <div>Error !</div>;
+        },
     });
     const { updateCartItems, toggleCartVisibilityState } = useCart();
 
