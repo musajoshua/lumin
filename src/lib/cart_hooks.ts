@@ -67,7 +67,7 @@ export function useCart() {
 
     const decrementQuantityOfCartItem = (id: number) => {
         const cartItems: any = cartItemsVar();
-        let filteredCartItem = cartItems.find((item: any) => item.id === id);
+        const filteredCartItem = cartItems.find((item: any) => item.id === id);
 
         if (filteredCartItem.quantity > 1) {
             const updatedCartItems = cartItems.map((cartItem: any) =>
